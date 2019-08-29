@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="greeting"></h1>
+        <div class="weather-box">
+            <div class="row1">
+                <h2 class="weather-location"></h2>
+                <canvas class="weatherType" id="icon1" width="128" height="128"></canvas>
+            </div>
+
+            <div class="row2">
+                <h1 class="temp"></h1>
+                <span class="temp-type">°C</span>
+                <!-- <span class="temp-type">F</span> -->
+            </div>
+
+            <p class="weather-description"></p>
+            <p class="weather-humidity"></p>
+            <p class="weather-pressure"></p>
+            <p class="weather-wind"></p>
+
+        </div>
+    </div>
+
+    <script src="js/skycons.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #085078, #85d8ce);
+    /* background-image: linear-gradient(to bottom, #311847, #3EB9E6); */
+    /* background: linear-gradient(to bottom, #65c7f7, #9cecfb); */
+    /* background: linear-gradient(to bottom, #2c3e50, #4ca1af); */
+    /* background-image: linear-gradient(to bottom, #283e51, #4b79a1); */
+}
+
+.greeting {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.weather-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.row1 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+}
+
+.weather-location {
+    color: #fff;
+    font-size: 2.8rem;
+    margin-right: 20px;
+}
+
+.weather-icon {
+    width: 100px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.row2:hover .temp {
+    color: #c0c0aa;
+}
+
+.row2:hover .temp-type {
+    color: #fff;
+}
+
+.temp {
+    color: #fff;
+    font-size: 5rem;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: color 1s;
+}
+
+.temp-type {
+    color: #c0c0aa;
+    font-size: 5rem;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+.weather-description,
+.weather-humidity,
+.weather-pressure,
+.weather-wind {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+
+    /*
+    .container {
+        height: 130vh;
+    }
+*/
+
+    .greeting {
+        font-size: 3rem;
+        margin-top: 10px;
+    }
+
+    .row1 {
+        flex-direction: column;
+    }
+
+    .weather-location {
+        font-size: 2.5rem;
+        margin-right: 0;
+        margin-bottom: 20px;
+
+    }
+
+}
